@@ -124,7 +124,7 @@ output application/json
         </error-handler>
     </flow>
     <flow name="get:\filter:cocktailapi-config">
-		<flow-ref doc:name="Flow Reference" doc:id="009dbea3-e332-4bdd-be02-fa88a672068f" name="get:\filter"/>
+		<flow-ref doc:name="asd" doc:id="009dbea3-e332-4bdd-be02-fa88a672068f" name="get:\filter"/>
     </flow>
     <flow name="get:\latest:cocktailapi-config">
 		<flow-ref doc:name="Flow Reference" doc:id="34702388-7e42-4353-b130-9727d910302e" name="get:\latest"/>
