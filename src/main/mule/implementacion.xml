@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="get:\filter" doc:id="56af2196-c288-48f5-be51-1d10c3fb44cb" >
+		<http:request method="GET" doc:name="Request" doc:id="67f6b962-86c2-4884-8a5e-59cb24506ae6" config-ref="HTTP_Request_configuration" path="/filter.php">
+			<http:query-params ><![CDATA[#[output application/java
+---
+{
+	"s" : attributes.querryParams
+}]]]></http:query-params>
+		</http:request>
+		<ee:transform doc:name="Transform Message" doc:id="538bf2fe-3c51-485b-900a-da3edaa46608" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+"asd"]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="get:\search" doc:id="724574be-5267-4007-b719-275fe32dd611" >
+		<ee:transform doc:name="Transform Message" doc:id="383aeccc-67b9-4ed9-8daa-c3052889cf9c" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+"asd"]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="get:\lookup" doc:id="9345cbf6-13e5-4ce9-995f-cbfb42d45046" >
+		<ee:transform doc:name="Transform Message" doc:id="f7e927b0-3c36-40db-af64-df38fc974c98" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+"asd"]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="get:\latest" doc:id="9e63a3f8-e251-4426-a079-dc10d0e69987" >
+		<ee:transform doc:name="Transform Message" doc:id="c01d2489-038b-47ca-b122-9ea7d9463ccf" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+"asd"]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="get:\popular" doc:id="1b9c2b56-2f83-4019-bf89-c4d798e52856" >
+		<ee:transform doc:name="Transform Message" doc:id="2fd5b832-1de6-4c87-99c4-e815c18be325" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+"asd"]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="get:\random" doc:id="e0d2a626-a0b3-4514-9943-6bf5cd80ae79" >
+		<ee:transform doc:name="Transform Message" doc:id="79c429f0-5a24-495a-a06e-19a6bdce6ca2" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+"asd"]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="get:\randomselection" doc:id="d38848a8-50eb-44b8-8a88-dac4aaf88a75" >
+		<ee:transform doc:name="Transform Message" doc:id="9f7525db-2b9b-4a1c-a59f-59b842a7e22f" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+"asd"]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="get:\list" doc:id="f7ad6bcf-afdc-4064-aa32-a3ff396330f5" >
+		<ee:transform doc:name="Transform Message" doc:id="c5732136-d074-496e-af9c-7b546257391b" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+"asd"]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>

@@ -1,0 +1,11 @@
+# Default Properties
+X-RapidAPI-Key: "SIGN-UP-FOR-KEY"
+X-RapidAPI-Host: "the-cocktail-db.p.rapidapi.com"
+httpPort: "8081"
+httpsPort: "8082"
+protocol: "http"
+searchURL: "https://the-cocktail-db.p.rapidapi.com/search.php"
+lookupURL: "https://the-cocktail-db.p.rapidapi.com/lookup.php"
+filterURL: "https://the-cocktail-db.p.rapidapi.com/filter.php"
+randomURL: "https://the-cocktail-db.p.rapidapi.com/random.php"
+randomselectionURL: "https://the-cocktail-db.p.rapidapi.com/randomselection.php"
